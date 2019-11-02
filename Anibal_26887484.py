@@ -19,8 +19,8 @@ def biseccion(f, a, b, ER, N):
     r_Superior=0 #Rango superior
     r_Inferior=0 #Rango inferior
     i=1 #Numero de Iteraciones Realizadas
-    if( (f(a) * f(b) > 0) | N<0)#Reemplazo del manejo de excepcion
-        print('Los datos ingresados no cumplen los requisitos, ingrese datos validos')
+    if( (f(a) * f(b) > 0) | N<0): #Reemplazo del manejo de excepcion
+        raise Exception("Los datos ingresados no cumplen los requisitos.")
     while ( (N>i) & (Ea>ER) ): #Se comprueba que no exceda el numero de iteraciones y que el error relativo no ha alcanzado el punto deseado
         r_Inferior = r_Superior #Se asignan rangos
         r_Superior = ( ( a + b )/2)
@@ -38,4 +38,4 @@ f1 = lambda x:math.exp(x) - ( 3 * pow(x,2)) #Funcion hecha en clase con los punt
 f2 = lambda x: pow(x,3) + (4 * pow(x,2)) - 10 #Funcion con punto 1 y 2
 
 if __name__ == "__main__":
-    a=biseccion( f1, 0, 1, 3, 15)
+    a=biseccion( f1, 0, 1, 3, -15)
