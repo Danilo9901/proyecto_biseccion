@@ -45,4 +45,4 @@ def biseccion(f, a, b, ER, N):
 if __name__ == "__main__":
     # Pruebe aquí su función.
     print (biseccion(f,1,2,0.01,10))
-    pass
+ 
