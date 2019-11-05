@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Proyecto en Python sobre el Algoritmo de Bisección.
 
@@ -26,5 +26,4 @@ def biseccion(f, a, b, ER, N):
 
 
 if __name__ == "__main__":
-    # Pruebe aquí su función.
     pass
